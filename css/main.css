@@ -301,7 +301,6 @@ header {
 .gallery__cards {
     display: flex;
     justify-content: center;
-    -webkit-box-flex: wrap;
     flex-flow: wrap;
     gap: 20px;
     padding-top: 65px;
