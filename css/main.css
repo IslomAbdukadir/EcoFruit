@@ -301,6 +301,7 @@ header {
 
 .gallery__cards {
     display: flex;
+    
     flex-flow: wrap;
     gap: 20px;
     padding-top: 65px;
@@ -917,13 +918,13 @@ header {
     background-size: cover;
 
 
-    -webkit-animation: back 10s infinite;
+    -webkit-animation: back 3s infinite;
     /* Safari 4+ */
-    -moz-animation: back 10s infinite;
+    -moz-animation: back 3s infinite;
     /* Fx 5+ */
-    -o-animation: back 10s infinite;
+    -o-animation: back 3s infinite;
     /* Opera 12+ */
-    animation: back 10s infinite;
+    animation: back 3s infinite;
     /* IE 10+, Fx 29+ */
 
 
