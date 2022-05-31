@@ -1,4 +1,7 @@
 @media (max-width: 1440px) {
+    .container {
+        max-width: 1336px;
+    }
     .header__link {
         font-size: 20px;
         font-weight: 500;
@@ -12,6 +15,10 @@
 
     .header__txt {
         margin-bottom: 150px;
+    }
+
+    .footer__banner  img {
+        max-width: 1330px;
     }
     
 }
