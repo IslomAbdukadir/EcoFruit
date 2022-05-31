@@ -300,8 +300,6 @@ header {
 
 .gallery__cards {
     display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
     justify-content: center;
     -webkit-box-flex: wrap;
     flex-flow: wrap;
