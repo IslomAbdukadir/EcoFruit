@@ -1107,6 +1107,7 @@ body.menu {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     padding: 10px 0;
+    z-index: 12;
 }
 
 .menu-bar.menu {
