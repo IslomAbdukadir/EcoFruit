@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoFruit</title>
+    <title>Ecofruit - сухофрукты, орехи, бобовые, овощи, фрукты, бахча из Узбекистана</title>
+    <meta name="description" content="Ecofruit - только самые лучшие сухофрукты, орехи, бобовые, овощи, фрукты, бахча из Узбекистана с любовью!">
+    <meta name="keywords" content="сухофрукты из узбекистана, орехи из узбекистана, бобовые из узбекистана, овощи из узбекистана, фрукты из узбекистана, бахча из узбекистана">
     <link rel="stylesheet" href="../../css/all.min.css">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/media.css">
@@ -90,12 +92,14 @@
                             <i class="fas fa-check"></i>Contact the sales department
                         </li>
                     </ul>
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="text" placeholder="Subject">
-                        <input type="text" placeholder="Comment">
-                        <a href="#!" class="contact__form-btn">Submit</a>
+                    <form action="https://formsubmit.co/sales@ecofruit.uz" method="POST" class="contact__form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://ecofruit.uz/">
+                        <input type="text" placeholder="Name" name="Name">
+                        <input type="email" placeholder="Email" name="Email">
+                        <input type="number" placeholder="Phone" name="Phone">
+                        <textarea type="text" name="Text"></textarea>
+                        <button class="contact__form-btn" type="submit">Отправить</button>
                     </form>
                 </div>
                 <iframe
@@ -149,12 +153,14 @@
                 </ul>
                 <ul class="footer__list last2">
                     <h5 class="footer__title">Contact us</h5>
-                    <form action="" class="footer__form">
-                        <input type="text" placeholder="Name">
-                        <input type="number" placeholder="Phone number">
-                        <input type="email" placeholder="Email">
-                        <textarea name="" id="" placeholder=""></textarea>
-                        <button class="footer__button">Send</button>
+                    <form action="https://formsubmit.co/sales@ecofruit.uz" method="POST" class="footer__form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://ecofruit.uz/">
+                        <input type="text" placeholder="Name" name="Name">
+                        <input type="email" placeholder="Email" name="Email">
+                        <input type="number" placeholder="Phone" name="Phone">
+                        <textarea id="Text" name="Text"></textarea>
+                        <button class="footer__button" type="submit">Отправить</button>
                     </form>
                 </ul>
                 <ul class="footer__list last">
