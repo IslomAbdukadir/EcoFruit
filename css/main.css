@@ -338,6 +338,9 @@ header {
     flex-flow: wrap;
     gap: 20px;
     padding-top: 65px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .gallery__card {
