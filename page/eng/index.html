@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/media.css">
     <script src="../../js/jQuery.js"></script>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../libs/micromodal/micromodal.css">
 </head>
 
 <body>
@@ -63,14 +67,44 @@
                 </div>
             </div>
         </div>
-        <div class="header__banner">
-            <div class="container">
-                <h1 class="header__title">Calories & Nutrition Facts</h1>
-                <p class="header__txt">
-                    Our products are available in bulk with the brands of Foofel or your brand in a variety of cartoons
-                    with the address, and the logo printed
-                    <i class="fal fa-arrow-right"></i>
-                </p>
+        <div class="home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide home-slider__slide"
+                    style="background-image: url(../../images/banner2large.jpg); background-position: center; background-size: cover;">
+                    <div class="container">
+                        <h2 data-animate="bottom" class="header__title">Eco Fruit</h2>
+                        <p data-animate="bottom" class="header__span-ru">
+                            whith Love from Uzbekistan
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide home-slider__slide"
+                    style="background-image: url(../../images/bannerlarge.jpg); background-position: center; background-size: cover;">
+                    <div class="container">
+                        <h2 data-animate="bottom" class="home-slider__heading">Calories & Nutrition Facts</h2>
+                        <p data-animate="bottom" class="home-slider__text">
+                            Our products are available in bulk with the brands of Foofel or your brand in a variety of cartoons with the address, and the logo printed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide home-slider__slide"
+                    style="background-image: url(../../images/banner3large.jpg); background-position: center; background-size: cover;">
+                    <div class="container">
+                        <h2 data-animate="bottom" class="home-slider__heading">Healthy lifestyle</h2>
+                        <p data-animate="bottom" class="home-slider__text">
+                            The consumption of dried fruits is always mixed with the ``healthy lifestyle`` process. Consumers are now aware that the consumption of dried fruits and nuts can be presented as part of a healthy diet.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row home-slider__bottom">
+                <div class="col-3 home-slider__pagination-wrapper">
+                    <div class="home-slider__pagination swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -291,18 +325,15 @@
                     </li>
                 </ul>
                 <ul class="footer__list last">
-                    <h5 class="footer__title">Subscribe us</h5>
                     <li class="footer__item">
-                        <a href="#!" class="footer__link">
-                            It seems you don't follow us!
-                        </a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.346059883021!2d69.22776041573566!3d41.32308770794121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf78dc3a893%3A0xff4c878b103fc184!2sECOFRUIT%C2%AE%20Green%20Desert%20LLC!5e0!3m2!1sru!2s!4v1653151885708!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="container"></iframe>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 
-
+    <script src="../../libs/swiper/swiper-bundle.min.js"></script>
     <script src="../../js/script.js"></script>
 </body>
 

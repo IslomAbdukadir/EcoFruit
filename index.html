@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecofruit - сухофрукты, орехи, бобовые, овощи, фрукты, бахча из Узбекистана</title>
-    <meta name="description" content="Ecofruit - только самые лучшие сухофрукты, орехи, бобовые, овощи, фрукты, бахча из Узбекистана с любовью!">
-    <meta name="keywords" content="сухофрукты из узбекистана, орехи из узбекистана, бобовые из узбекистана, овощи из узбекистана, фрукты из узбекистана, бахча из узбекистана">
+    <meta name="description"
+        content="Ecofruit - только самые лучшие сухофрукты, орехи, бобовые, овощи, фрукты, бахча из Узбекистана с любовью!">
+    <meta name="keywords"
+        content="сухофрукты из узбекистана, орехи из узбекистана, бобовые из узбекистана, овощи из узбекистана, фрукты из узбекистана, бахча из узбекистана">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/micromodal/micromodal.css">
+
     <script src="js/jQuery.js"></script>
 </head>
 
@@ -64,11 +70,49 @@
                 </div>
             </div>
         </div>
-        <div class="header__banner header__banner-ru">
-            <div class="container">
-                <h1 class="header__title header__title-ru">Eco Fruit<br><span class="header__span-ru">из Узбекистана с
-                        любовью</span></h1>
+        <div class="home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide home-slider__slide"
+                    style="background-image: url(images/banner2large.jpg); background-position: center; background-size: cover;">
+                    <div class="container">
+                        <h2 data-animate="bottom" class="header__title">Eco Fruit</h2>
+                        <p data-animate="bottom" class="header__span-ru">
+                            Из Узбекистана с любовью
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide home-slider__slide"
+                    style="background-image: url(images/bannerlarge.jpg); background-position: center; background-size: cover;">
+                    <div class="container">
+                        <h2 data-animate="bottom" class="home-slider__heading">Калории и пищевая ценность</h2>
+                        <p data-animate="bottom" class="home-slider__text">
+                            Наши продукты доступны оптом с брендами Foofel или вашим брендом в различных мультфильмах с
+                            адресом и напечатанным логотипом.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide home-slider__slide"
+                    style="background-image: url(images/banner3large.jpg); background-position: center; background-size: cover;">
+                    <div class="container">
+                        <h2 data-animate="bottom" class="home-slider__heading">Здоровый образ жизни</h2>
+                        <p data-animate="bottom" class="home-slider__text">
+                            Употребление сухофруктов всегда смешивается с процессом «здорового образа жизни».
+                            Потребители теперь знают, что потребление сухофруктов и орехов можно представить как часть
+                            здорового питания.
+                        </p>
+                    </div>
+                </div>
+
             </div>
+            <div class="row home-slider__bottom">
+                <div class="col-3 home-slider__pagination-wrapper">
+                    <div class="home-slider__pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
         </div>
     </header>
 
@@ -289,18 +333,15 @@
                     </li>
                 </ul>
                 <ul class="footer__list last">
-                    <h5 class="footer__title">Подписывайтесь на нас</h5>
                     <li class="footer__item">
-                        <a href="#!" class="footer__link">
-                            Кажется, вы не подключились к своей учетной записи Instagram
-                        </a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.346059883021!2d69.22776041573566!3d41.32308770794121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf78dc3a893%3A0xff4c878b103fc184!2sECOFRUIT%C2%AE%20Green%20Desert%20LLC!5e0!3m2!1sru!2s!4v1653151885708!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="container"></iframe>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 
-
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
