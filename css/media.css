@@ -284,6 +284,10 @@
     .feature__card {
         max-width: 200px;
     }
+
+    .home-slider__heading {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 414px) {
