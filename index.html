@@ -11,12 +11,13 @@
     <meta name="keywords"
         content="сухофрукты из узбекистана, орехи из узбекистана, бобовые из узбекистана, овощи из узбекистана, фрукты из узбекистана, бахча из узбекистана">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">  
     <link rel="stylesheet" href="libs/micromodal/micromodal.css">
 
     <script src="js/jQuery.js"></script>
@@ -27,7 +28,9 @@
         <div class="header__nav scroll">
             <div class="header__container container menu-bar">
                 <div class="header__logo">
-                    <img src="images/headerLogo.png" alt="">
+                    <a href="#">
+                        <img src="images/headerLogo.png" alt="">
+                    </a>
                 </div>
                 <ul class="header__list">
                     <li class="header__item">
@@ -37,7 +40,7 @@
                         <a href="#fruit" class="header__link">Продукция</a>
                     </li>
                     <li class="header__item">
-                        <a href="page/ru/category.html" class="header__link">Каталог</a>
+                        <a href="page/ru/blog.html" class="header__link">Блог</a>
                     </li>
                     <li class="header__item">
                         <a href="page/ru/services.html" class="header__link">Услуги</a>
@@ -54,15 +57,12 @@
                 </ul>
                 <ul class="header__setup">
                     <li class="header__item-lang">
-                        <a href="#!" class="header__link">RU</a>
-                        <i class="fal fa-angle-down"></i>
-                        <div class="sub-menu-lang">
-                            <ul>
-                                <li class="header__item-lang">
-                                    <a href="page/eng/index.html">ENG</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="page/eng/index.html" class="header__link" title="English">
+                            <img src="images/svg/FlagGB.svg" alt="">
+                        </a>
+                        <a href="#!" title="Русский язык">
+                            <img src="images/svg/FlagRussia.svg" alt="">
+                        </a>
                     </li>
                 </ul>
                 <div class="header__menu">
@@ -72,7 +72,8 @@
         </div>
         <div class="home-slider">
             <div class="swiper-wrapper">
-
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 <div class="swiper-slide home-slider__slide"
                     style="background-image: url(images/banner2large.jpg); background-position: center; background-size: cover;">
                     <div class="container">
@@ -88,7 +89,8 @@
                     <div class="container">
                         <h2 data-animate="bottom" class="home-slider__heading">Калории и пищевая ценность</h2>
                         <p data-animate="bottom" class="home-slider__text">
-                            Наши продукты доступны оптом с брендами Foofel или вашим брендом в различных мультфильмах с
+                            Наши продукты доступны оптом с брендами EcoFruit или вашим брендом в различных мультфильмах
+                            с
                             адресом и напечатанным логотипом.
                         </p>
                     </div>
@@ -117,81 +119,53 @@
     </header>
 
     <main class="page__main">
-        <section class="cards container">
-            <div class="card card-ru">
-                <h5 class="card__title card__title-ru">Сухофрукты очень питательны</h5>
-                <p class="card__txt card__txt-ru">
-                    Один кусочек сухофрукта содержит примерно такое же количество питательных веществ, как и свежий
-                    фрукт, но упакован в гораздо меньшую упаковку.
-                </p>
-                <p class="card__txt card__txt-ru">
-                    Одна порция может обеспечить большой процент рекомендуемой суточной нормы многих витаминов и
-                    минералов, таких как фолиевая кислота.
-                </p>
-            </div>
-        </section>
-        <section class="gallery">
-            <div class="container gallery__container">
-                <h2 class="gallery__title">Галерея</h2>
-                <div class="gallery__cards">
-                    <div class="gallery__card">
-                        <img src="images/gallery/1.png" alt="">
-                    </div>
-                    <div class="gallery__card">
-                        <img src="images/gallery/2.png" alt="">
-                    </div>
-                    <div class="gallery__card">
-                        <img src="images/gallery/3.png" alt="">
-                    </div>
-                    <div class="gallery__card">
-                        <img src="images/gallery/4.png" alt="">
-                    </div>
-                    <div class="gallery__card">
-                        <img src="images/gallery/5.png" alt="">
-                    </div>
-                    <div class="gallery__card">
-                        <img src="images/gallery/6.png" alt="">
-                    </div>
-                    <div class="gallery__card">
-                        <img src="images/gallery/7.png" alt="">
-                    </div>
-                    <div class="gallery__card">
-                        <img src="images/gallery/8.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="feature">
+        <section class="home-callback">
             <div class="container">
-                <h5 class="feature__title">Почему мы</h5>
-                <div class="feature__cards">
-                    <div class="feature__card">
-                        <img src="images/svg/feature/1.png" alt="">
-                        <p class="feature__name">Гарантия высокого качества</p>
+                <div class="row">
+                    <div class="col-xl-8 col-lg-6">
+                        <h3 class="home-callback__header">Нам доверяют</h3>
+                        <ul class="home-callback__list">
+                            <li class="home-callback__item">860 клиентов по всему миру</li>
+                            <li class="home-callback__item">36 лучших франчайзи</li>
+                            <li class="home-callback__item">38 пернатых попугаев</li>
+                            <li class="home-callback__item">23 надёжных партнёна</li>
+                            <li class="home-callback__item">108 производителей мебели</li>
+                            <li class="home-callback__item">256 восьмибитных цветов</li>
+                            <li class="home-callback__item">12 поставщиков</li>
+                            <li class="home-callback__item">85 сотрудников</li>
+                        </ul>
                     </div>
-                    <div class="feature__card">
-                        <img src="images/svg/feature/2.png" alt="">
-                        <p class="feature__name">Вкусные и полезные продукты</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="images/svg/feature/3.png" alt="">
-                        <p class="feature__name">Сертифицированная продукция</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="images/svg/feature/4.png" alt="">
-                        <p class="feature__name">Упаковка</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="images/svg/feature/5.png" alt="">
-                        <p class="feature__name">Экспорт</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="images/svg/feature/6.png" alt="">
-                        <p class="feature__name">Конкурентоспособные цены</p>
+                    <div class="col-xl-4 col-lg-6 home-callback__text-right">
+                        <p>Позвоните нам или оставьте заявку с сайта.<br>
+                            Мы перезвоним вам в течение 10 минут.</p>
+                        <a href="tel:+998 71 200 0224" class="phone-big home-callback__phone" title="Позвонить...">+998
+                            71 200 0224</a>
+                        <button class="button home-callback__button" data-custom-open="modal"
+                            data-form="Форма секции Нам доверяют">Оформите заявку сейчас</button>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="modal micromodal-slide" id="modal">
+            <div class="modal__overlay" data-custom-close>
+                <div class="modal__container">
+                    <header class="modal__header">
+                        <h2 class="modal__title">Оформить заявку</h2>
+                        <button class="modal__close" title="Закрыть" data-custom-close></button>
+                    </header>
+
+                    <form>
+                        <input type="text" name="Имя" placeholder="Ваше имя...">
+                        <input type="text" name="Телефон" placeholder="Ваш телефон...">
+                        <textarea name="Комментарий" placeholder="Комментарий..." rows="4"></textarea>
+                        <input type="hidden" name="form">
+                        <div class="modal__footer">
+                            <button class="button">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <section class="fruit" id="fruit">
             <div class="container">
                 <h5 class="fruit__title">Узбекские сухофрукты и орехи</h5>
@@ -200,7 +174,7 @@
                         <div class="fruit__image">
                             <img src="images/fruits/1.png" alt="">
                         </div>
-                        <h5 class="fruit__name">Сухофрукты</h5>
+                        <a href="page/ru/category.html" class="fruit__name">Сухофрукты</a>
                         <p class="fruit__txt">
                             Предоставляем большой выбор сухофруктов: курага, изюм, компотные смеси, чернослив.
                         </p>
@@ -253,6 +227,93 @@
                         <p class="fruit__txt">
                             Осуществляем оптовую продажу бахчевых культур.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature">
+            <div class="container">
+                <h5 class="feature__title">Почему мы</h5>
+                <div class="feature__cards">
+                    <div class="feature__card">
+                        <img src="images/svg/feature/1.png" alt="">
+                        <p class="feature__name">Гарантия высокого качества</p>
+                    </div>
+                    <div class="feature__card">
+                        <img src="images/svg/feature/2.png" alt="">
+                        <p class="feature__name">Вкусные и полезные продукты</p>
+                    </div>
+                    <div class="feature__card">
+                        <img src="images/svg/feature/3.png" alt="">
+                        <p class="feature__name">Сертифицированная продукция</p>
+                    </div>
+                    <div class="feature__card">
+                        <img src="images/svg/feature/4.png" alt="">
+                        <p class="feature__name">Упаковка</p>
+                    </div>
+                    <div class="feature__card">
+                        <img src="images/svg/feature/5.png" alt="">
+                        <p class="feature__name">Экспорт</p>
+                    </div>
+                    <div class="feature__card">
+                        <img src="images/svg/feature/6.png" alt="">
+                        <p class="feature__name">Конкурентоспособные цены</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gallery__container">
+                <div class="gallery__cards">
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/1.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/2.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/3.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/4.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/5.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/6.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/7.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/8.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/8.png" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="images/gallery/8.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sertificate">
+            <div class="container">
+                <h5 class="sertificate__title feature__title">Наши сертификаты</h5>
+                <div class="sertificate__cards">
+                    <div class="sertificate__card">
+                        <img src="../../images/svg/sertificate/iso22000.png" alt="" title="iso:22000">
+                    </div>
+
+                    <div class="sertificate__card">
+                        <img src="../../images/svg/sertificate/Kosher.png" alt="" title="KOSHER">
+                    </div>
+                    <div class="sertificate__card">
+                        <img src="../../images/svg/sertificate/organic.png" alt="" title="GLOBALG.A.P.">
+                    </div>
+                    <div class="sertificate__card">
+                        <img src="../../images/svg/sertificate/ISO.png" alt="" title="iso:9001">
                     </div>
                 </div>
             </div>
@@ -311,7 +372,7 @@
                         <input type="email" placeholder="Ваш почтовый адрес" name="Email">
                         <input type="number" placeholder="Ваш номер телефона" name="Phone">
                         <textarea name="Text"></textarea>
-                        <button class="footer__button" type="submit">Отправить</button>
+                        <button class="footer__button button" type="submit">Отправить</button>
                     </form>
                 </ul>
                 <ul class="footer__list last">
@@ -334,14 +395,19 @@
                 </ul>
                 <ul class="footer__list last">
                     <li class="footer__item">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.346059883021!2d69.22776041573566!3d41.32308770794121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf78dc3a893%3A0xff4c878b103fc184!2sECOFRUIT%C2%AE%20Green%20Desert%20LLC!5e0!3m2!1sru!2s!4v1653151885708!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="container"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.346059883021!2d69.22776041573566!3d41.32308770794121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf78dc3a893%3A0xff4c878b103fc184!2sECOFRUIT%C2%AE%20Green%20Desert%20LLC!5e0!3m2!1sru!2s!4v1653151885708!5m2!1sru!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="container"></iframe>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/micromodal/micromodal.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
