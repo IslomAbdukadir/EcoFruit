@@ -1369,6 +1369,10 @@ ul {
   padding-left: 0 !important;
 }
 
+.swiper-pagination {
+  z-index: 1 !important;
+}
+
 /* category start */
 
 .category__sort {
