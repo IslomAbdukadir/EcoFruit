@@ -12,7 +12,7 @@
     <meta name="keywords"
         content="сухофрукты из узбекистана, орехи из узбекистана, бобовые из узбекистана, овощи из узбекистана, фрукты из узбекистана, бахча из узбекистана">
     <link rel="stylesheet" href="../../css/all.min.css">
-    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap-reboot.min.css">   
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/media.css">
     <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap-grid.min.css">
@@ -26,7 +26,7 @@
             <div class="header__container container menu-bar">
                 <div class="header__logo">
                     <a href="#">
-                        <img src="../../images/headerLogo.png" alt="">
+                        <img src="../../images/ecofruit-logo-v1.svg" alt="">
                     </a>
                 </div>
                 <ul class="header__list">
@@ -69,14 +69,15 @@
         </div>
         <div class="home-slider">
             <div class="swiper-wrapper">
-
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 <div class="swiper-slide home-slider__slide"
-                    style="background-image: url(../../images/banner2large.jpg); background-position: center; background-size: cover;">
+                    style="background-image: url(../../images/Eco_fruit_Page.jpg); background-position: center; background-size: cover;">
                     <div class="container">
-                        <h2 data-animate="bottom" class="header__title">Eco Fruit</h2>
+                        <!-- <h2 data-animate="bottom" class="header__title">Eco Fruit</h2>
                         <p data-animate="bottom" class="header__span-ru">
-                            whith Love from Uzbekistan
-                        </p>
+                            Из Узбекистана с любовью
+                        </p> -->
                     </div>
                 </div>
 
@@ -113,6 +114,53 @@
     </header>
 
     <main class="page__main">
+        <section class="home-callback">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-6">
+                        <h3 class="home-callback__header">We are trusted</h3>
+                        <ul class="home-callback__list">
+                            <li class="home-callback__item">860 клиентов по всему миру</li>
+                            <li class="home-callback__item">36 лучших франчайзи</li>
+                            <li class="home-callback__item">38 пернатых попугаев</li>
+                            <li class="home-callback__item">23 надёжных партнёна</li>
+                            <li class="home-callback__item">108 производителей мебели</li>
+                            <li class="home-callback__item">256 восьмибитных цветов</li>
+                            <li class="home-callback__item">12 поставщиков</li>
+                            <li class="home-callback__item">85 сотрудников</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 home-callback__text-right">
+                        <p>Call us or leave a request from the site.
+                            We will call you back within 10 minutes.</p>
+                        <a href="tel:+998 71 200 0224" class="phone-big home-callback__phone" title="Call...">+998
+                            71 200 0224</a>
+                        <button class="button home-callback__button" data-custom-open="modal"
+                            data-form="Форма секции Нам доверяют">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal micromodal-slide" id="modal">
+            <div class="modal__overlay" data-custom-close>
+                <div class="modal__container">
+                    <header class="modal__header">
+                        <h2 class="modal__title">Оформить заявку</h2>
+                        <button class="modal__close" title="Закрыть" data-custom-close></button>
+                    </header>
+
+                    <form>
+                        <input type="text" name="Имя" placeholder="Ваше имя...">
+                        <input type="text" name="Телефон" placeholder="Ваш телефон...">
+                        <textarea name="Комментарий" placeholder="Комментарий..." rows="4"></textarea>
+                        <input type="hidden" name="form">
+                        <div class="modal__footer">
+                            <button class="button">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <section class="fruit" id="fruits">
             <div class="container">
                 <h5 class="fruit__title">Uzbek dried fruits and nuts</h5>
@@ -121,7 +169,7 @@
                         <div class="fruit__image">
                             <img src="../../images/fruits/1.png" alt="">
                         </div>
-                        <h5 class="fruit__name">Dried Fruits</h5>
+                        <a href="category.html" class="fruit__name">Dried Fruits</a>
                         <p class="fruit__txt">
                             We provide a large selection of dried fruits: dried apricots, raisins, compote mixtures,
                             prunes.
@@ -221,7 +269,7 @@
                     <a href="#!" class="gallery__card">
                         <img src="../../images/gallery/4.png" alt="">
                     </a>
-                <!-- </div>
+                    <!-- </div>
                 <div class="gallery__cards"> -->
                     <a href="#!" class="gallery__card">
                         <img src="../../images/gallery/5.png" alt="">
