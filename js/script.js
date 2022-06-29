@@ -68,21 +68,3 @@ const homeSlider = new Swiper(".home-slider", {
   loop: true,
   runCallbacksOnInit: true,
 });
-
-// nav
-
-var mediaTop = $(".scroll").offset().top;
-var media = $(".scroll");
-
-$(document).scroll(function () {
-  var scrollTop = $(document).scrollTop();
-
-  //fix/unfix as necessary
-  if (mediaTop < scrollTop) {
-    $(media).addClass("black");
-  } else {
-    $(media).removeClass("black");
-  }
-});
-
-//
