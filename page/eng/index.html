@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="../../css/media.css">
     <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../../libs/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../../libs/micromodal/micromodal.css">
 </head>
 
 <body>
@@ -31,10 +30,33 @@
                 </div>
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#!" class="header__link active">Home</a>
+                        <a href="#" class="header__link active">Home</a>
                     </li>
                     <li class="header__item">
-                        <a href="#fruits" class="header__link">Product</a>
+                        <a href="#!" class="header__link">Product</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="product.html">Сухофрукты</a>
+                            </li>
+                            <li>
+                                <a href="#!">Орехи</a>
+                            </li>
+                            <li>
+                                <a href="#!">Бобовые</a>
+                            </li>
+                            <li>
+                                <a href="#!">Фрукты</a>
+                            </li>
+                            <li>
+                                <a href="#!">Овощи</a>
+                            </li>
+                            <li>
+                                <a href="#!">Бахчевые культуры</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item">
+                        <a href="catalogue.html" class="header__link">Catalogue</a>
                     </li>
                     <li class="header__item">
                         <a href="blog.html" class="header__link">Blog</a>
@@ -114,116 +136,66 @@
     </header>
 
     <main class="page__main">
-        <section class="home-callback">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-6">
-                        <h3 class="home-callback__header">We are trusted</h3>
-                        <ul class="home-callback__list">
-                            <li class="home-callback__item">860 клиентов по всему миру</li>
-                            <li class="home-callback__item">36 лучших франчайзи</li>
-                            <li class="home-callback__item">38 пернатых попугаев</li>
-                            <li class="home-callback__item">23 надёжных партнёна</li>
-                            <li class="home-callback__item">108 производителей мебели</li>
-                            <li class="home-callback__item">256 восьмибитных цветов</li>
-                            <li class="home-callback__item">12 поставщиков</li>
-                            <li class="home-callback__item">85 сотрудников</li>
-                        </ul>
+        <section class="feature">
+            <div class="feature__cards">
+                <div class="feature__card">
+                    <img src="../../images/feature/services.jpg" alt="">
+                    <div class="feature__info">
+                        <i class="fa fa-check-circle-o" aria-hidden="true" style="color:#f78b1f;"></i>
+                        <p class="feature__name">Our Services</p>
+                        <p class="feature__txt">Our products are available in bulk with the brands of EcoFruit or your brand in a variety of cartoons with the address, and the logo printed</p>
+                        <a href="services.html" class="feature_btn">More</a>
                     </div>
-                    <div class="col-xl-3 col-lg-6 home-callback__text-right">
-                        <p>Call us or leave a request from the site.
-                            We will call you back within 10 minutes.</p>
-                        <a href="tel:+998 71 200 0224" class="phone-big home-callback__phone" title="Call...">+998
-                            71 200 0224</a>
-                        <button class="button home-callback__button" data-custom-open="modal"
-                            data-form="Форма секции Нам доверяют">Apply Now</button>
+                </div>
+                <div class="feature__card">
+                    <img src="../../images/feature/EcoFruit.jpg" alt="">
+                    <div class="feature__info">
+                        <i class="fa fa-check-circle-o" aria-hidden="true" style="color:#f78b1f;"></i>
+                        <p class="feature__name">EcoFruit</p>
+                        <p class="feature__txt">Dried fruit producer | Dried fruit exporter Your consultan | Consumer Support</p>
+                        <a href="about.html" class="feature_btn">More</a>
+                    </div>
+                </div>
+                <div class="feature__card">
+                    <img src="../../images/feature/Brand.jpg" alt="">
+                    <div class="feature__info">
+                        <i class="fa fa-check-circle-o" aria-hidden="true" style="color:#f78b1f;"></i>
+                        <p class="feature__name">Your Brand</p>
+                        <p class="feature__txt">Our products are available in bulk with the brands of EcoFruit or your brand in a variety of cartoons with the address, and the logo printed</p>
+                        <a href="#!" class="feature_btn">More</a>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="modal micromodal-slide" id="modal">
-            <div class="modal__overlay" data-custom-close>
-                <div class="modal__container">
-                    <header class="modal__header">
-                        <h2 class="modal__title">Оформить заявку</h2>
-                        <button class="modal__close" title="Закрыть" data-custom-close></button>
-                    </header>
-
-                    <form>
-                        <input type="text" name="Имя" placeholder="Ваше имя...">
-                        <input type="text" name="Телефон" placeholder="Ваш телефон...">
-                        <textarea name="Комментарий" placeholder="Комментарий..." rows="4"></textarea>
-                        <input type="hidden" name="form">
-                        <div class="modal__footer">
-                            <button class="button">Отправить</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <section class="fruit" id="fruits">
-            <div class="container">
-                <h5 class="fruit__title">Uzbek dried fruits and nuts</h5>
-                <div class="fruit__cards">
-                    <div class="fruit__card">
-                        <div class="fruit__image">
-                            <img src="../../images/fruits/1.png" alt="">
-                        </div>
-                        <a href="category.html" class="fruit__name">Dried Fruits</a>
-                        <p class="fruit__txt">
-                            We provide a large selection of dried fruits: dried apricots, raisins, compote mixtures,
-                            prunes.
-                        </p>
+        <section class="gallery">
+            <div class="gallery__container">
+                <div class="gallery__cards">
+                    <a href="#!" class="gallery__card">
+                        <img src="../../images/gallery/1.jpg" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="../../images/gallery/2.jpg" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="../../images/gallery/3.jpg" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="../../images/gallery/4.jpg" alt="">
+                    </a>
                     </div>
-                    <div class="fruit__card">
-                        <div class="fruit__image">
-                            <img src="../../images/fruits/2.png" alt="">
-                        </div>
-                        <h5 class="fruit__name">Nuts</h5>
-                        <p class="fruit__txt">
-                            We supply nuts in bulk. The range is constantly expanding.
-                        </p>
-                    </div>
-                </div>
-                <div class="fruit__cards">
-                    <div class="fruit__card">
-                        <div class="fruit__image">
-                            <img src="../../images/fruits/3.png" alt="">
-                        </div>
-                        <h5 class="fruit__name">Legumes</h5>
-                        <p class="fruit__txt">
-                            We carry out wholesale of beans and mung beans. All products are fresh harvest, calibrated.
-                        </p>
-                    </div>
-                    <div class="fruit__card">
-                        <div class="fruit__image">
-                            <img src="../../images/fruits/4.png" alt="">
-                        </div>
-                        <h5 class="fruit__name">Fruits</h5>
-                        <p class="fruit__txt">
-                            We offer a large selection of fresh fruits, freshly picked from the garden.
-                        </p>
-                    </div>
-                </div>
-                <div class="fruit__cards">
-                    <div class="fruit__card">
-                        <div class="fruit__image">
-                            <img src="../../images/fruits/5.png" alt="">
-                        </div>
-                        <h5 class="fruit__name">Vegetables</h5>
-                        <p class="fruit__txt">
-                            We supply fresh vegetables harvested from the fields.
-                        </p>
-                    </div>
-                    <div class="fruit__card">
-                        <div class="fruit__image">
-                            <img src="../../images/fruits/6.png" alt="">
-                        </div>
-                        <h5 class="fruit__name">Gourds</h5>
-                        <p class="fruit__txt">
-                            We carry out wholesale of gourds.
-                        </p>
-                    </div>
+                <div class="gallery__cards">
+                    <a href="#!" class="gallery__card">
+                        <img src="../../images/gallery/5.jpg" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="../../images/gallery/6.jpg" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="../../images/gallery/7.jpg" alt="">
+                    </a>
+                    <a href="#!" class="gallery__card">
+                        <img src="../../images/gallery/8.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </section>
@@ -251,103 +223,10 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
-            <div class="gallery__container">
-                <div class="gallery__cards">
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/1.png" alt="">
-                    </a>
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/2.png" alt="">
-                    </a>
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/3.png" alt="">
-                    </a>
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/4.png" alt="">
-                    </a>
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/4.png" alt="">
-                    </a>
-                    <!-- </div>
-                <div class="gallery__cards"> -->
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/5.png" alt="">
-                    </a>
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/6.png" alt="">
-                    </a>
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/7.png" alt="">
-                    </a>
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/8.png" alt="">
-                    </a>
-                    <a href="#!" class="gallery__card">
-                        <img src="../../images/gallery/4.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="feature">
-            <div class="container">
-                <h5 class="feature__title">Why we?</h5>
-                <div class="feature__cards">
-                    <div class="feature__card">
-                        <img src="../../images/svg/feature/1.png" alt="">
-                        <p class="feature__name">High quality guarantee</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="../../images/svg/feature/2.png" alt="">
-                        <p class="feature__name">Tasty and healthy foods</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="../../images/svg/feature/3.png" alt="">
-                        <p class="feature__name">Certified Products</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="../../images/svg/feature/4.png" alt="">
-                        <p class="feature__name">Package</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="../../images/svg/feature/5.png" alt="">
-                        <p class="feature__name">Export</p>
-                    </div>
-                    <div class="feature__card">
-                        <img src="../../images/svg/feature/6.png" alt="">
-                        <p class="feature__name">Competitive prices</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sertificate">
-            <div class="container">
-                <h5 class="sertificate__title feature__title">Our Sertificates</h5>
-                <div class="sertificate__cards">
-                    <div class="sertificate__card">
-                        <img src="../../images/svg/sertificate/iso22000.png" alt="">
-                    </div>
-
-                    <div class="sertificate__card">
-                        <img src="../../images/svg/sertificate/Kosher.png" alt="">
-                    </div>
-                    <div class="sertificate__card">
-                        <img src="../../images/svg/sertificate/organic.png" alt="">
-                    </div>
-                    <div class="sertificate__card">
-                        <img src="../../images/svg/sertificate/ISO.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__banner">
-                <img src="../../images/footerImg.png" alt="">
-            </div>
             <div class="footer__content">
                 <ul class="footer__list">
                     <div class="footer__logo">
@@ -413,14 +292,6 @@
                     </li>
                     <li class="footer__item">
                         <a href="about.html" class="footer__link">About</a>
-                    </li>
-                </ul>
-                <ul class="footer__list last">
-                    <li class="footer__item">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.346059883021!2d69.22776041573566!3d41.32308770794121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf78dc3a893%3A0xff4c878b103fc184!2sECOFRUIT%C2%AE%20Green%20Desert%20LLC!5e0!3m2!1sru!2s!4v1653151885708!5m2!1sru!2s"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="container"></iframe>
                     </li>
                 </ul>
             </div>

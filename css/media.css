@@ -261,11 +261,6 @@
       font-size: 21px;
     }
   
-    .footer__banner img {
-      max-width: 500px;
-      margin-top: -90px;
-    }
-  
     .footer {
       padding-bottom: 50px;
     }
@@ -344,11 +339,6 @@
       line-height: 17.5px;
     }
   
-    .footer__banner img {
-      max-width: 380px;
-      margin-top: -70px;
-    }
-  
     .feature__card {
       max-width: 170px;
     }
@@ -425,12 +415,7 @@
       -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
     }
-  
-    .footer__banner img {
-      max-width: 310px;
-      margin: -60px auto 0;
-    }
-  
+
     .contact {
       padding: 50px 0;
     }
@@ -483,9 +468,5 @@
   
     .header__logo img {
       width: 80%;
-    }
-  
-    .footer__banner {
-      display: none;
     }
   }
