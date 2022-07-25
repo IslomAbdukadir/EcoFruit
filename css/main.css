@@ -693,10 +693,6 @@ header {
   min-height: 444px;
 }
 
-.feature__card:nth-child(2) {
-  min-height: 414px;
-}
-
 .feature__card img {
   width: 100%;
 }
@@ -882,9 +878,6 @@ header {
 
 /* contact start */
 
-.contact {
-  padding: 100px 0 200px;
-}
 
 .contact__title {
   font-size: 48px;
@@ -1226,7 +1219,12 @@ body.menu {
 
 [data-animate=bottom] {
   -webkit-transform: translate3d(0, 15px, 0);
-  transform: translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0) scale(2);
+}
+
+.swiper-slide .container {
+  display: flex;align-items: center;
+  justify-content: center;
 }
 
 .home-slider__slide.swiper-slide-active [data-animate] {
@@ -1323,7 +1321,7 @@ ul {
   justify-content: center;
   -ms-flex-flow: wrap;
   flex-flow: wrap;
-  gap: 70px;
+  gap: 50px;
 }
 
 .category__sort-card-desc {
