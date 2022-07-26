@@ -109,6 +109,11 @@ textarea {
   color: #fff;
 }
 
+
+dl, ol, ul {
+  margin-bottom: 0;
+}
+
 /* header start */
 
 header {
@@ -851,8 +856,9 @@ header {
   margin: 0 auto 100px;
 }
 
-.about__banner {
+.about__banner img {
   margin-bottom: 80px;
+  width: 1140px;
 }
 
 .about__info-txt {
